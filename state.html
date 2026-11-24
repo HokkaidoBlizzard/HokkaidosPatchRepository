@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State Patches</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: white;
+      font-family: Arial, sans-serif;
+      background: #111;
+    }
+
+    header {
+      height: 145px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: #080808;
+      border-bottom: 1px solid #333;
+    }
+
+    header img {
+      width: 180px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    nav {
+      position: absolute;
+      left: 35px;
+      display: flex;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .discord {
+      position: absolute;
+      right: 35px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .discord:hover {
+      color: #5865f2;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 65px 0 90px;
+    }
+
+    h1 {
+      margin-bottom: 45px;
+      text-align: center;
+      font-size: 52px;
+    }
+
+    .patch-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .patch-card {
+      overflow: hidden;
+      background: #050505;
+      border: 1px solid #444;
+      border-radius: 12px;
+    }
+
+    .patch-card img {
+      width: 100%;
+      height: 280px;
+      padding: 25px;
+      object-fit: contain;
+      background: #222;
+    }
+
+    .patch-info {
+      padding: 22px;
+    }
+
+    .patch-info h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .patch-info p {
+      margin: 0;
+      color: #bbb;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #888;
+      background: #000;
+    }
+
+    @media (max-width: 800px) {
+      .patch-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .patch-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        left: 10px;
+        gap: 8px;
+        font-size: 12px;
+      }
+
+      .discord {
+        right: 10px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="city.html">City</a>
+      <a href="county.html">County</a>
+      <a href="state.html">State</a>
+      <a href="federal.html">Federal</a>
+    </nav>
+
+    <a href="index.html">
+      <img src="./assets/HK.png" alt="HK Logo">
+    </a>
+
+    <a
+      class="discord"
+      href="https://discord.gg/YPBXmsmrR"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Discord
+    </a>
+  </header>
+
+  <main>
+    <h1>State Patches</h1>
+
+    <section class="patch-grid">
+
+      <article class="patch-card">
+        <img
+          src="./assets/IMG_7381.JPG"
+          alt="Florida Highway Patrol patch"
+        >
+
+        <div class="patch-info">
+          <h2>Florida Highway Patrol</h2>
+          <p>N/A</p>
+        </div>
+      </article>
+
+      <article class="patch-card">
+        <img
+          src="./assets/IMG_7380.JPG"
+          alt="State patch placeholder"
+        >
+
+        <div class="patch-info">
+          <h2>Iowa State Patrol</h2>
+          <p>Ebay</p>
+        </div>
+      </article>
+
+        <article class="patch-card">
+        <img
+          src="./assets/IMG_7386.JPG"
+          alt="State patch placeholder"
+        >
+
+        <div class="patch-info">
+          <h2>Pennsylvania State Police Special Emergency Response Team</h2>
+          <p>Trade</p>
+        </div>
+      </article>
+      
+        <article class="patch-card">
+        <img
+          src="./assets/IMG_7387.JPG"
+          alt="State patch placeholder"
+        >
+
+        <div class="patch-info">
+          <h2>Indiana State Police</h2>
+          <p>Ebay</p>
+        </div>
+      </article>
+
+        <article class="patch-card">
+        <img
+          src="./assets/IMG_7377.JPG"
+          alt="State patch placeholder"
+        >
+
+        <div class="patch-info">
+          <h2>Nevada Department of Corrections</h2>
+          <p>Email</p>
+        </div>
+      </article>
+
+        <article class="patch-card">
+        <img
+          src="./assets/IMG_7385.JPG"
+          alt="State patch placeholder"
+        >
+
+        <div class="patch-info">
+          <h2>Maryland National Capitol Police Department</h2>
+          <p>Trade</p>
+        </div>
+
+    </section>
+  </main>
+
+  <footer>
+    Police Patch Collection
+  </footer>
+
+</body>
+</html>

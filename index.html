@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Patch Collection</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+      background: #111;
+    }
+
+    .top-header {
+      height: 145px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: #080808;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo img {
+      width: 180px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    .discord-link {
+      position: absolute;
+      right: 35px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .discord-link:hover {
+      color: #5865f2;
+    }
+
+    nav {
+      position: absolute;
+      left: 35px;
+      display: flex;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .welcome {
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .welcome h1 {
+      margin: 0 0 20px;
+      font-size: clamp(40px, 7vw, 80px);
+    }
+
+    .welcome p {
+      color: #bbb;
+      font-size: 19px;
+    }
+
+    .category-grid {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding-bottom: 90px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .category-card {
+      padding: 45px 30px;
+      color: white;
+      text-decoration: none;
+      background: #050505;
+      border: 1px solid #444;
+      border-radius: 12px;
+      transition: 0.2s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      border-color: white;
+      background: #1c1c1c;
+    }
+
+    .category-card h2 {
+      margin: 0 0 12px;
+      font-size: 30px;
+    }
+
+    .category-card p {
+      margin: 0;
+      color: #aaa;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #888;
+      background: #000;
+    }
+
+    @media (max-width: 700px) {
+      .top-header {
+        height: 190px;
+      }
+
+      nav {
+        top: 20px;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .discord-link {
+        right: 15px;
+        bottom: 15px;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="top-header">
+
+    <nav>
+      <a href="city.html">City</a>
+      <a href="county.html">County</a>
+      <a href="state.html">State</a>
+      <a href="federal.html">Federal</a>
+    </nav>
+
+    <a href="index.html" class="logo">
+      <img src="./assets/HK.png" alt="HK Logo">
+    </a>
+
+    <a
+      href="https://discord.gg/YPBXmsmrR"
+      class="discord-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Discord
+    </a>
+
+  </header>
+
+  <main>
+
+    <section class="welcome">
+      <h1>Police Patch Collection</h1>
+
+      <p>
+        Browse my collection of city, county, state,
+        and federal agency patches.
+      </p>
+    </section>
+
+    <section class="category-grid">
+
+      <a href="city.html" class="category-card">
+        <h2>City Patches</h2>
+        <p>View municipal police patches.</p>
+      </a>
+
+      <a href="county.html" class="category-card">
+        <h2>County Patches</h2>
+        <p>View county sheriff patches.</p>
+      </a>
+
+      <a href="state.html" class="category-card">
+        <h2>State Patches</h2>
+        <p>View state agency patches.</p>
+      </a>
+
+      <a href="federal.html" class="category-card">
+        <h2>Federal Patches</h2>
+        <p>View federal agency patches.</p>
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Police Patch Collection
+  </footer>
+
+</body>
+</html>
